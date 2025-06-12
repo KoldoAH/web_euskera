@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Traducción | Euskara Ikasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lekton:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="logo">
+            <h1>EUSKARA IKASI</h1>
+            <p>Traducciones</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ejercicios-a1.html">Ejercicios A1</a></li>
+                <li><a href="traducciones.html" class="active">Traducciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="translation-exercise">
+        <h2>Ejercicio de Traducción</h2>
+        
+        <!-- Selector de dirección -->
+        <div class="direction-selector">
+            <label>Traducir del:</label>
+            <select id="translationDirection">
+                <option value="eus-esp">Euskera → Español</option>
+                <option value="esp-eus">Español → Euskera</option>
+            </select>
+            <button class="btn-generate" onclick="generateWord()">Generar palabra</button>
+        </div>
+
+        <!-- Palabra a traducir -->
+        <div class="word-display">
+            <p id="wordToTranslate">Selecciona una dirección y haz clic en "Generar palabra".</p>
+            <input type="text" id="userTranslation" placeholder="Escribe tu traducción">
+            <button class="btn-check" onclick="checkTranslation()">Comprobar</button>
+        </div>
+
+        <!-- Feedback y progreso -->
+        <div class="feedback-section">
+            <p id="feedbackText"></p>
+            <div class="progress-counter">
+                <span id="correctCounter">0</span> aciertos de <span id="totalCounter">0</span>
+            </div>
+        </div>
+
+        <!-- Lista de palabras (oculta inicialmente) -->
+        <div class="word-list-toggle">
+            <button onclick="toggleWordList()">Mostrar lista de palabras</button>
+        </div>
+        <div class="word-list" id="wordList" style="display: none;">
+            <h3>Vocabulario</h3>
+            <table id="vocabularyTable">
+                <thead>
+                    <tr>
+                        <th>Euskera</th>
+                        <th>Español</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Euskara Ikasi</p>
+    </footer>
+
+    
+     <script>
+        // Variables globales
+        let vocabulary = [];
+        let currentWord = null;
+        let correctAnswers = 0;
+        let totalAttempts = 0;
+
+        // Cargar JSON al iniciar
+        async function loadVocabulary() {
+            try {
+                const response = await fetch('../data/coleccion_traducciones_1.json');
+                if (!response.ok) throw new Error("Error al cargar el JSON");
+                vocabulary = await response.json();
+            } catch (error) {
+                console.error("Error:", error);
+                // Datos de respaldo si falla
+                vocabulary = [
+                    {"eus": "Hegazkina", "esp": "avión"},
+                    {"eus": "Atea", "esp": "puerta"}
+                ];
+            }
+        }
+
+        // Generar palabra aleatoria
+        function generateWord() {
+            if (vocabulary.length === 0) {
+                alert("Vocabulario no cargado. Intenta recargar la página.");
+                return;
+            }
+            const direction = document.getElementById("translationDirection").value;
+            const randomIndex = Math.floor(Math.random() * vocabulary.length);
+            currentWord = vocabulary[randomIndex];
+
+            document.getElementById("wordToTranslate").textContent = 
+                (direction === "eus-esp") ? currentWord.eus : currentWord.esp;
+            document.getElementById("userTranslation").value = "";
+            document.getElementById("feedbackText").textContent = "";
+        }
+
+        // Comprobar traducción
+        function checkTranslation() {
+            const direction = document.getElementById("translationDirection").value;
+            const userAnswer = document.getElementById("userTranslation").value.trim().toLowerCase();
+            console.log("obtiene pal eus: " + currentWord.eus);
+            console.log("obtiene pal esp: " + currentWord.esp);
+            const correctAnswer = (direction === "eus-esp") 
+                ? currentWord.esp.toLowerCase() 
+                : currentWord.eus.toLowerCase();
+
+            totalAttempts++;
+            document.getElementById("totalCounter").textContent = totalAttempts;
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById("feedbackText").textContent = "✅ ¡Correcto!";
+                document.getElementById("feedbackText").style.color = "green";
+                correctAnswers++;
+                document.getElementById("correctCounter").textContent = correctAnswers;
+            } else {
+                document.getElementById("feedbackText").textContent = 
+                    `❌ Incorrecto. La respuesta es: "${correctAnswer}"`;
+                document.getElementById("feedbackText").style.color = "red";
+            }
+        }
+
+        // Iniciar al cargar la página
+        window.onload = loadVocabulary;
+    </script>
+</body>
+</html>

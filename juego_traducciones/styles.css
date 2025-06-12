@@ -1,0 +1,207 @@
+/* Variables de color y tipografía */
+:root {
+    --color-primary: #4CAF50; /* Verde vasco */
+    --color-secondary: #2E7D32;
+    --color-light: #F5F5F5;
+    --color-dark: #333;
+    --font-main: 'Open Sans', sans-serif;
+    --font-title: 'Lekton', sans-serif;
+}
+
+/* Reset y estilos generales */
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-family: var(--font-title);
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: var(--color-primary);
+}
+
+.user-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary);
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.language-selector {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://ejemplo.com/fondo-montanas.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* Página de traducciones */
+.translation-exercise {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.direction-selector {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction-selector select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.btn-generate {
+    padding: 0.5rem 1rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.word-display {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.word-display p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.word-display input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.feedback-section {
+    margin-bottom: 2rem;
+}
+
+.progress-counter {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.progress-counter span {
+    font-weight: bold;
+}
+
+.word-list {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.word-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.word-list th, .word-list td {
+    padding: 0.8rem;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.word-list th {
+    background: #f5f5f5;
+}
+
+.word-list-toggle button {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 1rem;
+}

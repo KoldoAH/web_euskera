@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euskara Ikasi | Aprende Euskera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lekton:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="logo">
+            <h1>EUSKARA IKASI</h1>
+            <p>Aprende Euskera desde cero</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#ejercicios">Ejercicios A1</a></li>
+                <li><a href="#canciones">Canciones</a></li>
+                <li><a href="#examenes">Exámenes</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button class="btn-login">Iniciar sesión</button>
+            <select class="language-selector">
+                <option value="es">🇪🇸 ES</option>
+                <option value="eu">🇪🇺 EU</option>
+                <option value="en">🇬🇧 EN</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Sumérgete en el Euskera</h2>
+            <p>Ejercicios interactivos, música y preparación de exámenes para todos los niveles.</p>
+            <button class="btn-primary" id="startButton">Empieza ahora</button>
+        </div>
+    </section>
+
+    <!-- Secciones Principales -->
+    <section class="features">
+        <div class="feature-card" id="ejercicios">
+            <i class="fas fa-book-open"></i>
+            <h3>Ejercicios A1</h3>
+            <p>Vocabulario, gramática y pronunciación para principiantes.</p>
+        </div>
+        <div class="feature-card" id="canciones">
+            <i class="fas fa-music"></i>
+            <h3>Canciones</h3>
+            <p>Entrena tu oído con música vasca y ejercicios de huecos.</p>
+        </div>
+        <div class="feature-card" id="examenes">
+            <i class="fas fa-clipboard-check"></i>
+            <h3>Exámenes</h3>
+            <p>Simulacros para certificados oficiales (HABE, EGA).</p>
+        </div>
+    </section>
+
+    <!-- Progreso del Usuario -->
+    <section class="progress-section">
+        <h2>Tu progreso</h2>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 30%;">30%</div>
+        </div>
+        <p>¡Sigue así! Has completado 5 lecciones esta semana.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Euskara Ikasi | Diseñado para aprender euskera de forma divertida</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    document.getElementById('startButton').addEventListener('click', function() {
+        window.location.href = '#ejercicios'; // Redirige a la sección de ejercicios
+        // O si tienes una página separada:
+        // window.location.href = 'ejercicios-a1.html';
+    });
+</script>
+</html>

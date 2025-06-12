@@ -1,0 +1,522 @@
+/* Variables de color y tipografía */
+:root {
+    --color-primary: #4CAF50; /* Verde vasco */
+    --color-secondary: #2E7D32;
+    --color-light: #F5F5F5;
+    --color-dark: #333;
+    --font-main: 'Open Sans', sans-serif;
+    --font-title: 'Lekton', sans-serif;
+}
+
+/* Reset y estilos generales */
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-family: var(--font-title);
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: var(--color-primary);
+}
+
+.user-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary);
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.language-selector {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://ejemplo.com/fondo-montanas.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Secciones principales */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1rem;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+/* Progreso */
+.progress-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-primary);
+    border-radius: 10px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Página de Ejercicios A1 */
+.a1-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+.units-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.unit-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.unit-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.unit-number {
+    background: var(--color-primary);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.unit-tag {
+    background: #eee;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.unit-icons {
+    margin: 1rem 0;
+    color: var(--color-primary);
+}
+
+.unit-icons i {
+    margin-right: 0.5rem;
+}
+
+.btn-unit {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Ejercicio de audio + huecos */
+.exercise-demo {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.audio-player {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.fill-blanks {
+    margin-top: 1rem;
+}
+
+.blank-input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-check {
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+
+/* Página de lección */
+.breadcrumbs {
+    padding: 1rem 2rem;
+    background: #f9f9f9;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.lesson-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.lesson-content {
+    flex: 3;
+}
+
+.progress-sidebar {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.theory-box, .exercise-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.phrase-list {
+    line-height: 1.8;
+}
+
+.euskera-text {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* Ejercicios */
+.fill-blanks input {
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.match-exercise {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.match-column {
+    flex: 1;
+}
+
+.match-item {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    cursor: grab;
+    text-align: center;
+}
+
+.btn-record {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.feedback {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Barra de progreso */
+.exercise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.exercise-list li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.completed {
+    color: var(--color-primary);
+}
+
+.pending {
+    color: #ccc;
+}
+
+.btn-next {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn-next:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Página de ejercicios de vocabulario */
+.vocabulary-exercises {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.exercise {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.exercise-card {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.word-pair {
+    margin-bottom: 1rem;
+}
+
+.word-pair p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.word-pair input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.sentence-exercise p, .translation-exercise p {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
+.sentence-exercise input, .translation-exercise textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.sentence-exercise select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.translation-exercise textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.feedback {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .exercise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
