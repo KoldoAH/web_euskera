@@ -50,4 +50,321 @@
 ,{"eus":"Alaia","esp":"alegre"}
 ,{"eus":"Bakarrik","esp":"solo"}
 ,{"eus":"Itxita","esp":"cerrado"}
+
+,{"eus":"Itsadarra","esp":"ría"}
+,{"eus":"Itsasertza","esp":"orilla"}
+,{"eus":"Lainoa","esp":"nube"}
+,{"eus":"Esnatuta","esp":"despierto"}
+,{"eus":"Lo","esp":"dormido"}
+,{"eus":"Haserre","esp":"enfadado"}
+,{"eus":"Etzanda","esp":"tumbado"}
+,{"eus":"Pozik","esp":"contento"}
+,{"eus":"Gutura","esp":"agusto"}
+,{"eus":"Ondo","esp":"bien"}
+,{"eus":"Bare","esp":"tranquilo"}
+,{"eus":"Ilun","esp":"oscuro"}
+,{"eus":"Lainotuta","esp":"nuboso"}
+,{"eus":"Oskarbi","esp":"sin nubes"} 
+,{"eus":"Babestuta","esp":"protegido"}
+,{"eus":"Ahots","esp":"voz"}
+,{"eus":"Konketaren","esp":"en el lavabo"} 
+,{"eus":"Olatua","esp":"ola"}
+,{"eus":"Surflaria","esp":"surfista"}
+,{"eus":"Soroslea","esp":"socorrista"}
+,{"eus":"Ohola","esp":"tabla"}
+,{"eus":"Irla","esp":"isla"}
+,{"eus":"Betaurrekoak","esp":"gafas"}
+,{"eus":"Harea","esp":"arena"}
+,{"eus":"Garbintzailea","esp":"limpiador"} 
+,{"eus":"Langilea","esp":"obrero/trabajador"}
+,{"eus":"Ixilik","esp":"calla"}
+,{"eus":"Hondartza","esp":"playa"}
+
+,{"eus":"Senar ohia","esp":"ex marido"}
+,{"eus":"Senarra lapurra da","esp":"mi marido es un ladrón"}
+,{"eus":"Frogatu","esp":"Demuéstralo"}
+,{"eus":"Eutsi dokumentuak","esp":"toma los documentos"}
+,{"eus":"Lagundu","esp":"ayúdame"}
+,{"eus":"Eman","esp":"dámelo"}
+,{"eus":"Berdina","esp":"igual"}
+,{"eus":"Basoa","esp":"bosque"}
+
+,{"eus":"Harria","esp":"piedra"}
+,{"eus":"Leizea","esp":"cueva"}
+,{"eus":"Aztarna","esp":"resto"}
+,{"eus":"Zalantza","esp":"duda"}
+,{"eus":"Agian","esp":"quizás"}
+,{"eus":"Inor","esp":"nadie"}
+,{"eus":"Ezer","esp":"nada"}
+,{"eus":"Ez dago inon","esp":"no está en ningún sitio"}
+
+,{"eus":"Urrun","esp":"lejos"}
+,{"eus":"Hurbil","esp":"cerca"}
+,{"eus":"Otarraina","esp":"langosta"}
+,{"eus":"Arazoa","esp":"problema"}
+,{"eus":"Jarraitu","esp":"seguirte"}
+,{"eus":"Ezagutu","esp":"conocerte"}
+,{"eus":"Adiskidetu","esp":"hacernos amigas"}
+,{"eus":"Aurkitu","esp":"encontrarlo"}
+,{"eus":"hobea","esp":"mejor"}
+,{"eus":"Haizea","esp":"viento"}
+
+,{"eus":"Tartekaria","esp":"corredor de apuestas"}
+,{"eus":"Lasterketa","esp":"carrera"}
+,{"eus":"Zaldia","esp":"caballo"}
+,{"eus":"Zalduna","esp":"jinete"}
+,{"eus":"Irabazlea","esp":"ganador"}
+,{"eus":"Izurdea","esp":"delfin"}
+,{"eus":"Balea","esp":"ballena"}
+,{"eus":"Marrazoa","esp":"tiburón"}
+,{"eus":"Maskorra","esp":"concha/caparazón"}
+,{"eus":"Dortoka","esp":"tortuga"}
+,{"eus":"Burua","esp":"cabeza"}
+,{"eus":"Gorputza","esp":"cuerpo"}
+,{"eus":"Helaga","esp":"aletas"}
+,{"eus":"Buztana","esp":"cola"}
+,{"eus":"Ahoa","esp":"boca"}
+,{"eus":"Jan","esp":"comer"}
+,{"eus":"Ikusi","esp":"ver"}
+,{"eus":"Erakutsi","esp":"mostrar"}
+
+,{"eus":"Lana","esp":"trabajo"}
+,{"eus":"Langilea","esp":"trabajador"} 
+,{"eus":"Bulegoa","esp":"oficina"}
+,{"eus":"Ordenagailua","esp":"ordenador"}
+,{"eus":"Apalategia","esp":"estantería"} 
+,{"eus":"Imprimagailua","esp":"impresora"} 
+,{"eus":"Arkatza","esp":"lapiz"}
+,{"eus":"Liburua","esp":"libro"}
+,{"eus":"Lan ordutegia","esp":"calendario de trabajo"}
+,{"eus":"Egutegia","esp":"calendario"}
+,{"eus":"Laneguna","esp":"horario laboral"}
+,{"eus":"Jaieguna","esp":"día festivo"}
+,{"eus":"Pakrak bete lan nabil","esp":"ando muy atareado"}
+,{"eus":"Jarri koadernoan","esp":"apúntalo en el cuaderno"}
+,{"eus":"Imprimagailua ez dabil","esp":"la impresora no funciona"}
+,{"eus":"Bulegoa zabalik dago","esp":"la oficina está abierta"}
+
+,{"eus":"Nor","esp":"quién"}
+,{"eus":"Zer","esp":"qué"}
+,{"eus":"Non","esp":"dónde"}
+,{"eus":"Zenbat","esp":"cuánto"}
+,{"eus":"Zein","esp":"cuál"}
+,{"eus":"Nola","esp":"cómo"}
+,{"eus":"Zeren","esp":"de qué"}
+,{"eus":"Noren","esp":"de quién"}
+,{"eus":"Noiz","esp":"cuándo"}
+
+,{"eus":"Astelehena","esp":"lunes"}
+,{"eus":"Asteartea","esp":"martes"}
+,{"eus":"Asteazkena","esp":"miércoles"}
+,{"eus":"Osteguna","esp":"jueves"}
+,{"eus":"Ostirala","esp":"viernes"}
+,{"eus":"Larunbata","esp":"sábado"}
+,{"eus":"Igandea","esp":"domingo"}
+,{"eus":"Atzo","esp":"ayer"}
+,{"eus":"Gaur","esp":"hoy"}
+,{"eus":"Bihar","esp":"mañana"}
+,{"eus":"Aste","esp":"semana"}
+
+,{"eus":"Urtarrila","esp":"enero"}
+,{"eus":"Otsaila","esp":"febrero"}
+,{"eus":"Martxoa","esp":"marzo"}
+,{"eus":"Apirila","esp":"abril"}
+,{"eus":"Maiatza","esp":"Maiatza"}
+,{"eus":"Ekaina","esp":"junio"}
+,{"eus":"Uztaila","esp":"julio"}
+,{"eus":"Abustua","esp":"agosto"}
+,{"eus":"Iraila","esp":"septiembre"}
+,{"eus":"Urria","esp":"octubre"}
+,{"eus":"Azaroa","esp":"noviembre"} 
+,{"eus":"Abendua/Azkena","esp":"diciembre"}
+
+
+,{"eus":"Zelaia","esp":"campo"}
+,{"eus":"Belarra","esp":"hierba"}
+,{"eus":"Futbolaria","esp":"futbolista"}
+,{"eus":"Jolastu","esp":"jugar"}
+,{"eus":"Galdu","esp":"perder"}
+,{"eus":"Irabazi","esp":"ganar"}
+,{"eus":"Sartu","esp":"meter gol/ entrar jugador al campo"}
+,{"eus":"Kirola","esp":"deporte"}
+,{"eus":"Aldagela","esp":"vestuario"}
+,{"eus":"Ikuslea","esp":"espectador"}
+,{"eus":"Saltzailea","esp":"vendedor"}
+,{"eus":"Saskia","esp":"cesta"}
+,{"eus":"Sasoian","esp":"- están en forma"}
+,{"eus":"Atsedena","esp":"descanso"}
+
+,{"eus":"Aktorea","esp":"actor"}
+,{"eus":"Dantzaria","esp":"bailarín"}
+,{"eus":"Abeslaria","esp":"cantante"}
+,{"eus":"Pailazoa","esp":"payaso"}
+,{"eus":"Argia","esp":"luz"}
+,{"eus":"Teloia","esp":"telón"}
+,{"eus":"Antzezlana","esp":"obra de teatro"}
+,{"eus":"Artelana","esp":"obra de arte"}
+,{"eus":"Txartela","esp":"tarjeta/entrada (para un concierto, un espectáculo...)"}
+,{"eus":"Margolaria","esp":"pintor"}
+,{"eus":"Egilea","esp":"pintor"}
+
+,{"eus":"Artean","esp":"entre"}
+,{"eus":"Barruan","esp":"dentro"}
+,{"eus":"Aurrean","esp":"delante"}
+,{"eus":"Atzean","esp":"detrás"}
+,{"eus":"Azpian","esp":"debajo"}
+,{"eus":"Kanpoan","esp":"fuera"}
+,{"eus":"Gainean","esp":"arriba"}
+,{"eus":"Ondoan","esp":"al lado"}
+
+
+,{"eus":"Estua","esp":"estrecho"}
+,{"eus":"Zabala","esp":"ancho"}
+,{"eus":"Handia","esp":"grande"}
+,{"eus":"Txikia","esp":"pequeño"}
+,{"eus":"Zikina","esp":"sucio"}
+,{"eus":"Garbia","esp":"limpio"}
+,{"eus":"Itsusi","esp":"feo"}
+,{"eus":"Polita","esp":"bonito"}
+,{"eus":"Zaharra","esp":"viejo"}
+,{"eus":"Berria","esp":"nuevo"}
+,{"eus":"Laburra","esp":"corto"}
+,{"eus":"Bikaina","esp":"estupendo"}
+,{"eus":"Merkea","esp":"barato"}
+,{"eus":"Garestia","esp":"caro"}
+,{"eus":"Azkarra","esp":"rápido"}
+,{"eus":"Geldoa","esp":"lento"}
+,{"eus":"Atsegina","esp":"agradable"}
+,{"eus":"Jatorra","esp":"simpática"}
+,{"eus":"Zintzoa","esp":"honesto"}
+,{"eus":"Interesgarria","esp":"interesante"}
+,{"eus":"Ospetsua","esp":"famoso"}
+,{"eus":"Ederra","esp":"maravilloso/bello"}
+,{"eus":"Argala","esp":"delgado"}
+,{"eus":"Lodia","esp":"gordo"}
+,{"eus":"Erraza","esp":"fácil"}
+,{"eus":"Berandu","esp":"tarde"}
+,{"eus":"Goiz","esp":"temprano"}
+,{"eus":"Zoragarria","esp":"maravilloso"}
+,{"eus":"Barregarria","esp":"divertido"}
+,{"eus":"Erosoa","esp":"cómodo"}
+,{"eus":"Deserosoa","esp":"incómodo"}
+,{"eus":"Trebea","esp":"hábil"}
+,{"eus":"Lilugarria","esp":"alucinante"}
+,{"eus":"Susmagarria","esp":"sospechoso"}
+,{"eus":"Ausarta","esp":"valiente"}
+,{"eus":"arrunta","esp":"normal"}
+,{"eus":"Aparta","esp":"especial"}
+,{"eus":"Indartsua/sendoa ","esp":"fuerte"}
+,{"eus":"Beldugarria","esp":"que da miedo"}
+,{"eus":"Ahula","esp":"débil"}
+,{"eus":"Guxua","esp":"especial"}
+,{"eus":"Burusoila","esp":"calvo"}
+,{"eus":"Nezkatuta","esp":"asqueado"}
+
+,{"eus":"Beltza","esp":"negro"}
+,{"eus":"Txuria","esp":"blanco"}
+,{"eus":"Horia","esp":"amarillo"}
+,{"eus":"Gorria","esp":"rojo"}
+,{"eus":"Urdina","esp":"azul"}
+,{"eus":"Berdea","esp":"verde"}
+,{"eus":"Laranja","esp":"naranja"}
+
+
+,{"eus":"Kipula","esp":"cebolla"}
+,{"eus":"Sagarra","esp":"manzana"}
+,{"eus":"Legatza","esp":"merluza"}
+,{"eus":"Atuna","esp":"atún"}
+,{"eus":"Bakailoa","esp":"bacalao"}
+,{"eus":"Txipiroiak","esp":"chipirones"}
+,{"eus":"Okela","esp":"carne"} 
+,{"eus":"Barazkia","esp":"verdura"}
+,{"eus":"Astuna","esp":"pesado"}
+,{"eus":"Ogitartekoa","esp":"bocadillo"}
+,{"eus":"Ardoa","esp":"vino"} 
+,{"eus":"Sagardoa","esp":"sidra"}
+,{"eus":"Garagardoa","esp":"cerveza"}
+,{"eus":"Ura","esp":"agua"}
+,{"eus":"Odolostea","esp":"morcilla"}
+,{"eus":"Zopa","esp":"sopa"}
+,{"eus":"Edate","esp":"beber"}
+,{"eus":"Gose","esp":"hambriento"}
+,{"eus":"Bazkaldu","esp":"comer"}
+,{"eus":"Jatetxea","esp":"restaurante"}
+,{"eus":"Kafesnea","esp":"café con leche"}
+,{"eus":"Gosaria","esp":"desayuno"}
+,{"eus":"Bazkaria","esp":"comida"}
+,{"eus":"Afaria","esp":"cena"}
+,{"eus":"Ona","esp":"bueno"}
+,{"eus":"Gozoa","esp":"sabroso"}
+,{"eus":"Bero","esp":"caliente"}
+,{"eus":"Hotz","esp":"frío"}
+,{"eus":"Samur","esp":"tierno"}
+,{"eus":"Gogor","esp":"duro"}
+,{"eus":"Jan","esp":"comer"}
+,{"eus":"Edan","esp":"beber"}
+,{"eus":"Jesar","esp":"sentar"}
+,{"eus":"Altxatu","esp":"levantar(se)"}
+,{"eus":"Atuna","esp":"atún"}
+,{"eus":"Indaba","esp":"alubia"}
+,{"eus":"Piperra","esp":"pimiento"}
+,{"eus":"Gazta","esp":"queso"}
+,{"eus":"Eztia","esp":"miel"}
+,{"eus":"Baserria","esp":"caserío"}
+,{"eus":"Artzaina","esp":"pastor"}
+,{"eus":"Zer duzu?","esp":"Qué tienes?"}
+,{"eus":"Inguruko","esp":"alrededor"}
+,{"eus":"Hartu","esp":"toma"}
+
+,{"eus":"Buru","esp":"cabeza"}
+,{"eus":"Cara","esp":"aurpegi"}
+,{"eus":"Frente","esp":"kopeta/bekoki"}
+,{"eus":"Begi","esp":"ojo"}
+,{"eus":"Belarri","esp":"oreja"}
+,{"eus":"Sudur","esp":"nariz "}
+,{"eus":"Masail","esp":"mejilla"}
+,{"eus":"Kokots","esp":"barbilla"}
+,{"eus":"Ezpain","esp":"labio "}
+,{"eus":"Aho","esp":"boca "}
+,{"eus":"Hortz","esp":"diente"}
+,{"eus":"Ile","esp":"cabello"}
+,{"eus":"Beso","esp":"brazo"}
+,{"eus":"Bular","esp":"pecho"}
+,{"eus":"Ukondo","esp":"codo"}
+,{"eus":"Esku","esp":"mano"}
+,{"eus":"Ipurdi","esp":"culo"}
+,{"eus":"Aldaka","esp":"cadera"}
+,{"eus":"Hanka","esp":"pierna"}
+,{"eus":"Belaun","esp":"rodilla"}
+,{"eus":"Oin","esp":"pie"}
+,{"eus":"Hatz","esp":"dedo"}
+,{"eus":"Esku","esp":"mano"}
+,{"eus":"Eskumutur","esp":"muñeca"}
+,{"eus":"Azazkal","esp":"uña"}
+,{"eus":"Esku-azpi","esp":"palma"}
+,{"eus":"Bihotz","esp":"corazón"}
+
+,{"eus":"Tabernaria","esp":"camarero"}
+,{"eus":"Mahaia","esp":"mesa"}
+,{"eus":"Bezeroa","esp":"cliente"}
+,{"eus":"Edaria","esp":"bebida"}
+,{"eus":"Non dago taberna?","esp":"Dónde está la taberna?"}
+,{"eus":"Mahaia libre dago?","esp":"Está libre la mesa?"}
+,{"eus":"Kafe hutsa eta kafesnea mesedez","esp":"Un café solo y un café con leche por favor"}
+,{"eus":"Besterik?","esp":"Algo más?"}
+,{"eus":"Deiaren zain nago","esp":"estoy esperando una llamada"}
+,{"eus":"Jende gutxi dago tabernan","esp":"En la taberna hay poca gente"}
+,{"eus":"Bazterra","esp":"esquina"}
+,{"eus":"Egunkariak","esp":"periódicos"}
+,{"eus":"Susmagarria","esp":"sospechoso"}
+,{"eus":"Lasaia","esp":"tranquilo"}
+,{"eus":"Urduria","esp":"nervioso"}
+,{"eus":"Hurrengo","esp":"siguiente"}
+,{"eus":"Bitxia","esp":"curioso"}
+
+
+
+
+
+
 ]
