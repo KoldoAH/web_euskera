@@ -45,31 +45,38 @@
 
     <!-- Secciones Principales -->
     <section class="features">
-        <div class="feature-card" id="ejercicios">
+        <div class="feature-card" id="desde_cero">
             <i class="fas fa-book-open"></i>
-            <h3>Ejercicios A1</h3>
-            <p>Vocabulario, gramática y pronunciación para principiantes.</p>
+            <h3>Aprende desde cero</h3>
+            <p>No sabes nada de Euskera? No te preocupes, este curso es para ti!</p>
         </div>
+        <!-- <div> -->
+        <a class="feature-card" id="A1" href="lecciones/listado_lecciones.html">
+                <i class="fas fa-book-open"></i>
+                <h3>Preparación A1</h3>
+                <p>Prepárate para obtener el nivel A1</p>
+            </a>
+        <!-- </div> -->
         <div class="feature-card" id="canciones">
             <i class="fas fa-music"></i>
-            <h3>Canciones</h3>
+            <h3>Canciones (Próximamente)</h3>
             <p>Entrena tu oído con música vasca y ejercicios de huecos.</p>
         </div>
         <div class="feature-card" id="examenes">
             <i class="fas fa-clipboard-check"></i>
-            <h3>Exámenes</h3>
+            <h3>Exámenes (Próximamente)</h3>
             <p>Simulacros para certificados oficiales (HABE, EGA).</p>
         </div>
     </section>
 
     <!-- Progreso del Usuario -->
-    <section class="progress-section">
+    <!-- <section class="progress-section">
         <h2>Tu progreso</h2>
         <div class="progress-bar">
             <div class="progress-fill" style="width: 30%;">30%</div>
         </div>
-        <p>¡Sigue así! Has completado 5 lecciones esta semana.</p>
-    </section>
+        <p>¡Sigue así! Has completado 5 lecciones esta semana.</p> -->
+    <!-- </section> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -82,7 +89,7 @@
 </body>
 <script>
     document.getElementById('startButton').addEventListener('click', function() {
-        window.location.href = '#ejercicios'; // Redirige a la sección de ejercicios
+        window.location.href = '#A1'; // Redirige a la sección de ejercicios
         // O si tienes una página separada:
         // window.location.href = 'ejercicios-a1.html';
     });
