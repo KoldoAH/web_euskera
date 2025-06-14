@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1: Gramática Vasca | Euskara Ikasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lekton:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos mejorados para teoría */
+        .theory-section {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2e7d32;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .theory-title {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .highlight-box {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .example-pair {
+            display: flex;
+            margin: 10px 0;
+        }
+        .euskera {
+            width: 45%;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .translation {
+            width: 45%;
+            margin-left: 10%;
+            font-style: italic;
+        }
+        .interactive-exercise {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .exercise-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #0d47a1;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #90caf9;
+            border-radius: 4px;
+            margin: 0 10px;
+        }
+        .feedback {
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        .correct {
+            color: #2e7d32;
+        }
+        .incorrect {
+            color: #c62828;
+        }
+        .grammar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .grammar-table th, .grammar-table td {
+            border: 1px solid #b0bec5;
+            padding: 10px;
+            text-align: left;
+        }
+        .grammar-table th {
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>EUSKARA IKASI</h1>
+            <p>Lección 1: Posposiciones y sistema verbal</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ejercicios-a1.html">Ejercicios</a></li>
+                <li><a href="#" class="active">Lección 1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <!-- Introducción a posposiciones -->
+        <section class="theory-section">
+            <h2 class="theory-title">1. Posposiciones en Euskera</h2>
+            <p>En euskera, las relaciones espaciales/temporales se expresan con <strong>posposiciones</strong> que se unen directamente al sustantivo:</p>
+            
+            <div class="highlight-box">
+                <p><strong>Estructura básica:</strong> Sustantivo + posposición</p>
+                <div class="example-pair">
+                    <div class="euskera">etxea + non → etxean</div>
+                    <div class="translation">(la casa + en → en la casa)</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">etxea + nondik → etxetik</div>
+                    <div class="translation">(la casa + desde → desde la casa)</div>
+                </div>
+            </div>
+            
+            <h3>Posición del sufijo</h3>
+            <p>El sufijo se coloca al final del sintagma nominal completo:</p>
+            <div class="example-pair">
+                <div class="euskera">Etxe hau + non → Etxe honetan</div>
+                <div class="translation">(Esta casa + en → En esta casa)</div>
+            </div>
+            <div class="example-pair">
+                <div class="euskera">Etxe handi honetan</div>
+                <div class="translation">En esta gran casa</div>
+            </div>
+        </section>
+
+        <!-- Tipos de nombres -->
+        <section class="theory-section">
+            <h2 class="theory-title">2. Sufijos según tipo de nombre</h2>
+            
+            <h3>Singular vs Plural vs Indeterminado</h3>
+            <table class="grammar-table">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Ejemplo</th>
+                    <th>Traducción</th>
+                </tr>
+                <tr>
+                    <td>Singular</td>
+                    <td>Atzo Mikelen etxean egon ginen</td>
+                    <td>Ayer estuvimos en la casa de Mikel</td>
+                </tr>
+                <tr>
+                    <td>Plural (amigos)</td>
+                    <td>Atzo gure lagunen etxeetan egon ginen</td>
+                    <td>Ayer estuvimos en las casas de nuestros amigos</td>
+                </tr>
+                <tr>
+                    <td>Plural (amigo)</td>
+                    <td>Atzo gure lagunaren etxeetan egon ginen</td>
+                    <td>Ayer estuvimos en las casas de nuestro amigo</td>
+                </tr>
+                <tr>
+                    <td>Indeterminado</td>
+                    <td>Atzo zenbait etxetan egon ginen</td>
+                    <td>Ayer estuvimos en algunas casas</td>
+                </tr>
+            </table>
+            
+            <div class="highlight-box">
+                <p><strong>Comparativa indeterminado vs determinado:</strong></p>
+                <div class="example-pair">
+                    <div class="euskera">hiru etxetan</div>
+                    <div class="translation">En tres casas (indeterminado)</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">hiru etxeetan</div>
+                    <div class="translation">En las tres casas (determinado)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ejercicio 1 -->
+        <section class="interactive-exercise">
+            <div class="exercise-title">✍️ Ejercicio 1: Completa con posposiciones</div>
+            <p>1. Mikel ___ dago (etxea + non) <input type="text" id="ex1-1"> <span class="feedback" id="fb1-1"></span></p>
+            <p>2. ___ dator Mikel? (Non o Nondik?) <input type="text" id="ex1-2"> <span class="feedback" id="fb1-2"></span></p>
+            <p>3. Gure lagunaren ___ egon ginen (etxeak plural + non) <input type="text" id="ex1-3"> <span class="feedback" id="fb1-3"></span></p>
+            <button onclick="checkExercise1()">Comprobar respuestas</button>
+        </section>
+
+        <!-- Animados vs inanimados -->
+        <section class="theory-section">
+            <h2 class="theory-title">3. Nombres animados vs inanimados</h2>
+            
+            <div class="highlight-box">
+                <p><strong>Inanimados:</strong> Usan posposiciones simples (non, nondik...)</p>
+                <div class="example-pair">
+                    <div class="euskera">Etxean</div>
+                    <div class="translation">En la casa</div>
+                </div>
+                
+                <p><strong>Animados (personas/animales):</strong> Usan formas especiales</p>
+                <div class="example-pair">
+                    <div class="euskera">Mikel + norengan → Mikerengan</div>
+                    <div class="translation">(Mikel + en → En Mikel)</div>
+                </div>
+            </div>
+            
+            <h3>Comparativa:</h3>
+            <div class="example-pair">
+                <div class="euskera">Non (inanimados) ↔ Norengan (animados)</div>
+                <div class="translation">Son equivalentes pero para tipos distintos</div>
+            </div>
+        </section>
+
+        <!-- Sistema verbal -->
+        <section class="theory-section">
+            <h2 class="theory-title">4. Sistema Verbal</h2>
+            
+            <h3>Formas sintéticas vs perifrásticas</h3>
+            <table class="grammar-table">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Ejemplo</th>
+                    <th>Traducción</th>
+                    <th>Características</th>
+                </tr>
+                <tr>
+                    <td>Sintética</td>
+                    <td>Nik sagar bat daukat</td>
+                    <td>Yo tengo una manzana</td>
+                    <td>Todo en una palabra</td>
+                </tr>
+                <tr>
+                    <td>Perifrástica</td>
+                    <td>Nik sagar bat erosi dut</td>
+                    <td>Yo he comprado una manzana</td>
+                    <td>Verbo principal + auxiliar</td>
+                </tr>
+            </table>
+            
+            <h3>Formas del verbo principal</h3>
+            <table class="grammar-table">
+                <tr>
+                    <th>Forma</th>
+                    <th>Ejemplo</th>
+                    <th>Uso</th>
+                </tr>
+                <tr>
+                    <td>Participio</td>
+                    <td>Sagar bat erosi dut</td>
+                    <td>Acción completada (he comprado una manzana)</td>
+                </tr>
+                <tr>
+                    <td>Imperfecto</td>
+                    <td>Egunero sagar bat erosten dut</td>
+                    <td>Acción habitual (Compro una manzana todos los días)</td>
+                </tr>
+                <tr>
+                    <td>Futuro</td>
+                    <td>Bihar sagar bat erosiko dut</td>
+                    <td>Acción futura (Mañana compraré una manzana)</td>
+                </tr>
+            </table>
+            
+            <div class="highlight-box">
+                <h4>Verbos auxiliares</h4>
+                <p>El auxiliar indica la persona y relación entre participantes:</p>
+                <ul>
+                    <li><strong>Nor (sujeto):</strong> "Ni etxera joan naiz" (Yo he ido a casa)</li>
+                    <li><strong>Nor-Nork (sujeto-objeto):</strong> "Nik sagar bat erosi dut" (Yo he comprado una manzana)</li>
+                    <li><strong>Nor-Nori-Nork:</strong> "Mikelek niri autoa eskatu dit" (Mikel me ha pedido a mí el coche)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ejercicio 2 -->
+        <section class="interactive-exercise">
+            <div class="exercise-title">✍️ Ejercicio 2: Conjugación verbal</div>
+            <p>1. (Nor) Ni etxera ___ (joan) <input type="text" id="ex2-1"> <span class="feedback" id="fb2-1"></span></p>
+            <p>2. (Nork) Nik sagar bat ___ (erosi) <input type="text" id="ex2-2"> <span class="feedback" id="fb2-2"></span></p>
+            <p>3. (Nor-Nori-Nork) Zuk niri liburua ___ (eman) <input type="text" id="ex2-3"> <span class="feedback" id="fb2-3"></span></p>
+            <button onclick="checkExercise2()">Comprobar respuestas</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Euskara Ikasi | Lección basada en el método HABE</p>
+    </footer>
+
+    <script>
+        // Ejercicio 1 - Posposiciones
+        function checkExercise1() {
+            const answers = {
+                "ex1-1": "etxean",
+                "ex1-2": "nondik",
+                "ex1-3": "etxeetan"
+            };
+            
+            checkAnswers(answers, 1);
+        }
+
+        // Ejercicio 2 - Verbos
+        function checkExercise2() {
+            const answers = {
+                "ex2-1": "joan naiz",
+                "ex2-2": "erosi dut",
+                "ex2-3": "eman didazu"
+            };
+            
+            checkAnswers(answers, 2);
+        }
+
+        // Función genérica para verificar respuestas
+
+        function checkAnswers(answers, exerciseNum) {
+            let allCorrect = true;
+            
+            for (const [id, answer] of Object.entries(answers)) {
+                // Extraer el número de pregunta (1, 2, 3) del ID (ex1-1 → 1)
+                const questionNum = id.split('-')[1];
+                const userAnswer = document.getElementById(id).value.trim().toLowerCase();
+                // Cambiar "fb" + id por "fb" + exerciseNum + "-" + questionNum
+                const feedback = document.getElementById(`fb${exerciseNum}-${questionNum}`);
+                
+                if (userAnswer === answer.toLowerCase()) {
+                    feedback.textContent = "✓ Correcto";
+                    feedback.className = "feedback correct";
+                } else {
+                    feedback.textContent = `✗ Debería ser: ${answer}`;
+                    feedback.className = "feedback incorrect";
+                    allCorrect = false;
+                }
+            }
+            
+            if (allCorrect) {
+                alert(`¡Perfecto! Has completado el ejercicio ${exerciseNum} correctamente.`);
+            }
+        }
+        // function checkAnswers(answers, exerciseNum) {
+        //     let allCorrect = true;
+            
+        //     for (const [id, answer] of Object.entries(answers)) {
+        //         const userAnswer = document.getElementById(id).value.trim().toLowerCase();
+        //         const feedback = document.getElementById("fb" + id);
+                
+        //         if (userAnswer === answer.toLowerCase()) {
+        //             feedback.textContent = "✓ Correcto";
+        //             feedback.className = "feedback correct";
+        //         } else {
+        //             feedback.textContent = `✗ Debería ser: ${answer}`;
+        //             feedback.className = "feedback incorrect";
+        //             allCorrect = false;
+        //         }
+        //     }
+            
+        //     if (allCorrect) {
+        //         alert(`¡Perfecto! Has completado el ejercicio ${exerciseNum} correctamente.`);
+        //     }
+        // }
+    </script>
+</body>
+</html>
