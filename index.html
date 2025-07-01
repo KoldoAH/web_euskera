@@ -45,11 +45,11 @@
 
     <!-- Secciones Principales -->
     <section class="features">
-        <div class="feature-card" id="desde_cero">
+        <a class="feature-card" id="desde_cero" href="desde_cero/listado_lecciones.html">
             <i class="fas fa-book-open"></i>
             <h3>Aprende desde cero</h3>
             <p>No sabes nada de Euskera? No te preocupes, este curso es para ti!</p>
-        </div>
+        </a>
         <!-- <div> -->
         <a class="feature-card" id="A1" href="lecciones/listado_lecciones.html">
                 <i class="fas fa-book-open"></i>
@@ -90,6 +90,11 @@
 <script>
     document.getElementById('startButton').addEventListener('click', function() {
         window.location.href = '#A1'; // Redirige a la sección de ejercicios
+        // O si tienes una página separada:
+        // window.location.href = 'ejercicios-a1.html';
+    });
+    document.getElementById('startButton').addEventListener('click', function() {
+        window.location.href = '#desde_cero'; // Redirige a la sección de ejercicios
         // O si tienes una página separada:
         // window.location.href = 'ejercicios-a1.html';
     });
