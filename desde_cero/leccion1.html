@@ -6,8 +6,23 @@
     <title>Lección 1: Gramática Euskera | Euskara Ikasi</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lekton:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Estilos mejorados para teoría */
+        .audio-btn {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
         .theory-section {
             background-color: #f8f9fa;
             border-left: 4px solid #2e7d32;
@@ -105,7 +120,12 @@
             <div class="highlight-box">
                 <p><strong>Vocabulario básico</p>
                 <div class="example-pair">
-                    <div class="euskera">Kaixo</div>
+                    <div class="euskera">Kaixo
+                        <button class="audio-btn" onclick="playAudio('kaixo')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                     
                     <div class="translation">Hola</div>
                 </div>
                 <div class="example-pair">
@@ -113,7 +133,12 @@
                     <div class="translation">Adiós</div>
                 </div>
                 <div class="example-pair">
-                    <div class="euskera">Zer moduz?</div>
+                    <div class="euskera">Zer moduz?
+                        <button class="audio-btn" onclick="playAudio('zer-moduz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    
                     <div class="translation">Qué tal?</div>
                 </div>
                 <div class="example-pair">
@@ -201,7 +226,7 @@
             <!-- Ejercicio 2 -->
             <section class="interactive-exercise">
                 <div class="exercise-title">✍️ Ejercicio 2: traduce al euskera las siguientes palabras en castellano.</div>
-                <p>Ejemplo: Adiós - <strong>Agur</strong></p>
+                <p>Ejemplo: Adiós -> <strong>Agur</strong></p>
                 <p>1.Sí -> <input type="text" id="ex2-1"> <span class="feedback" id="fb2-1"></span></p>
                 <p>2.Gracias -> <input type="text" id="ex2-2"> <span class="feedback" id="fb2-2"></span></p>
                 <p>3.Tú -><input type="text" id="ex2-3"> <span class="feedback" id="fb2-3"></span></p>
@@ -221,7 +246,14 @@
                 <p>Has llegado al final de la lección. Nos vemos en la siguiente!</p>
             </section>
            
-
+            <!-- Elementos de audio (ocultos) -->
+            <audio id="kaixo" src="audio/kaixo.mp3"></audio>
+            <audio id="zer-moduz" src="audio/zer-moduz.mp3"></audio>
+            <audio id="ongi" src="audio/ongi.mp3"></audio>
+            <audio id="bai" src="audio/bai.mp3"></audio>
+            <audio id="ez" src="audio/ez.mp3"></audio>
+            <audio id="ni" src="audio/ni.mp3"></audio>
+            <audio id="zu" src="audio/zu.mp3"></audio>
     </main>
 
     <footer class="footer">
@@ -229,6 +261,23 @@
     </footer>
 
     <script>
+        function playAudio(id) {
+            const audio = document.getElementById(id);
+            audio.currentTime = 0; // Reinicia el audio si ya estaba reproduciéndose
+            audio.play();
+        }
+        
+        // Alternativa con síntesis de voz (si no tienes archivos de audio)
+        function speakText(text, lang = 'eu') {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('Tu navegador no soporta la síntesis de voz.');
+            }
+        }
+
         // Ejercicio 1
         function checkExercise1() {
             const answers = {
