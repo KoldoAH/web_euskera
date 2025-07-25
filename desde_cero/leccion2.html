@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1: Gramática Euskera | Euskara Ikasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lekton:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos mejorados para teoría */
+        .audio-btn {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        .theory-section {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2e7d32;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .theory-title {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .highlight-box {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .example-pair {
+            display: flex;
+            margin: 10px 0;
+        }
+        .euskera {
+            width: 45%;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .translation {
+            width: 45%;
+            margin-left: 10%;
+            font-style: italic;
+        }
+        .interactive-exercise {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .exercise-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #0d47a1;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #90caf9;
+            border-radius: 4px;
+            margin: 0 10px;
+        }
+        .feedback {
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        .correct {
+            color: #2e7d32;
+        }
+        .incorrect {
+            color: #c62828;
+        }
+        .grammar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .grammar-table th, .grammar-table td {
+            border: 1px solid #b0bec5;
+            padding: 10px;
+            text-align: left;
+        }
+        .grammar-table th {
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>EUSKARA IKASI</h1>
+            <h2>Lección 2: Aprender a presentarte</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="ejercicios-a1.html">Ejercicios</a></li>
+                <li><a href="#" class="active">Lección 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <!-- Introducción a posposiciones -->
+        <section class="theory-section">
+            <h2 class="theory-title">2. Aprende a presentarte</h2>
+            <p>Kaixo!</p>
+            <p>Vamos a recordar algunas palabras de la primera lección y aprenderemos nuevas palabras y expresiones. <strong>Aurrera!</strong></p>
+            <div class="highlight-box">
+                <p><strong>Vocabulario básico</p>
+                <div class="example-pair">
+                    <div class="euskera">Kaixo
+                        <button class="audio-btn" onclick="playAudio('kaixo')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                     
+                    <div class="translation">Hola</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera"> <span style="color: blue;">Ni</span> <span style="color: red;">Gari</span> <span style="color: rgb(54, 102, 9);">naiz</span>
+                        <button class="audio-btn" onclick="playAudio('gari-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation"> <span style="color: blue;">Yo</span> <span style="color: rgb(54, 102, 9);">soy</span>  <span style="color: red;">Gari</span></div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera"><span style="color: blue;">Eta</span> <span style="color: red;">zu</span>?
+                        <button class="audio-btn" onclick="playAudio('eta-zu')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="translation"><span style="color: blue;">Y</span> <span style="color: red;">tú</span>?</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera"><span style="color: blue;">Nor</span> <span style="color: red;">zara</span> <span style="color: rgb(54, 102, 9);">zu</span>?
+                        <button class="audio-btn" onclick="playAudio('nor-zara-zu')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation"><span style="color: blue;">Quién</span> <span style="color: red;">eres</span> <span style="color: rgb(54, 102, 9);">tú</span>?</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera"><span style="color: blue;">Euskal Herri</span><span style="color: red;">koa</span> <span style="color: rgb(54, 102, 9);">naiz</span>
+                        <button class="audio-btn" onclick="playAudio('euskal-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation"><span style="color: rgb(54, 102, 9);">Soy</span> <span style="color: red;">del</span> <span style="color: blue;">País Vasco</span></div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera"><span style="color: blue;">Non</span><span style="color: red;">goa</span> <span style="color: rgb(54, 102, 9);">zara</span> <span style="color: brown;">zu</span>?
+                        <button class="audio-btn" onclick="playAudio('nongoa-zara-zu')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation"><span style="color: red;">De</span> <span style="color: blue;">dónde</span> <span style="color: rgb(54, 102, 9);">eres</span> <span style="color: brown;">tú</span>?</div>
+                </div>
+                <p>Las dos últimas son un poco más complicadas de entender. Pero no te preocupes iremos poco a poco</p>
+                <p>En euskera, las relaciones espaciales/temporales se expresan con <strong>posposiciones</strong> que se unen directamente al sustantivo:</p>
+                <div class="example-pair">
+                    <div class="euskera">Etxe = Casa</div>
+                    <div class="euskera">Etxea = La casa</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Non = Dónde</div>
+                    <div class="euskera">Nongoa = De dónde</div>
+                </div>
+                <p>Ahora se entiende mejor? En la siguiente sección, vas a aprender a decir de dónde eres!</p>
+               
+                
+            </section>
+            <section class="theory-section">
+                <h2 class="theory-title">2. Nongoa zara?</h2>
+                <div class="highlight-box"><p>Para decir de dónde eres, generalmente se utiliza lo siguiente:</p>
+                    <div class="example-pair">
+                    <div class="euskera">Ni ____koa naiz
+                        <button class="audio-btn" onclick="playAudio('ni-koa-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        </div>
+                        <div class="translation">Yo soy de ___</div>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <p>Vamos a ver varios ejemplos:</p>
+                <div class="example-pair">
+                    <div class="euskera">Mexiko<span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('mexiko-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        
+                    </div>
+                    <div class="translation">De México</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Frantzia<span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('frantzia-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Francia</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Bilbo<span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('bilbo-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Bilbao</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Donostia<span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('donostia-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De San Sebastián</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Nafarroa<span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('nafarroa-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Navarra</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Lapurdi<span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('lapurdi-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Lapurdi</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Gazteiz<span style="color: green;">e</span><span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Vitoria</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Santander<span style="color: green;">re</span><span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Santander</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Beasain<span style="color: green;">e</span><span style="color: red;">koa</span>
+                        <button class="audio-btn" onclick="playAudio('beasain-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">De Beasáin</div>
+                </div>
+                <p>Si termina en vocal, añadimos -koa. Si termina en consonante, añadimos -ekoa. Sin embargo, si termina en la letra r, añadimos otra r (Santander -> Santanderrekoa).</p>
+                <p>Como ya puedes decir de dónde eres, ahora es tu turno: Nongoa zara zu?</p>
+            </div>
+            </section>
+
+
+             <section class="theory-section">
+                <h2 class="theory-title">3. Non bizi zara?</h2>
+                
+                <div class="highlight-box">
+                    <p> Ya hemos aprendido a decir de dónde eres. Ahora vamos a aprender a decir dónde vives.
+                    <div class="example-pair">
+                        <div class="euskera">Euskal Herria<span style="color: red;">n</span> bizi naiz
+                            <button class="audio-btn" onclick="playAudio('eusk-bizi')">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            </div>
+                        <div class="translation">Vivo <span style="color: red;">en</span> el País Vasco</div>
+                    </div>
+                    <div class="example-pair">
+                        <div class="euskera">Eta zu?
+                            <button class="audio-btn" onclick="playAudio('eta-zu')">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            </div>
+                        <div class="translation">Y tú?</div>
+                    </div>
+                    <div class="example-pair">
+                        <div class="euskera">Non bizi zara?
+                            <button class="audio-btn" onclick="playAudio('non-bizi-zara')">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            </div>
+                        <div class="translation">Dónde vives?</div>
+                    </div>
+                    <div class="example-pair">
+                        <div class="euskera">Ni ____n bizi naiz
+                            <button class="audio-btn" onclick="playAudio('non-bizi-zara')">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            </div>
+                        <div class="translation">Yo vivo en ____</div>
+                    </div>
+                </div>
+        </section>
+
+            
+
+            <section class="theory-section">
+                <p>Has llegado al final de la lección. Nos vemos en la siguiente!</p>
+            </section>
+           
+            <!-- Elementos de audio (ocultos) -->
+            <audio id="kaixo" src="audio/leccion2/kaixo.mp3"></audio>
+            <audio id="gari-naiz" src="audio/leccion2/gari-naiz.mp3"></audio>
+            <audio id="eta-zu" src="audio/leccion2/eta-zu.mp3"></audio>
+            <audio id="nor-zara-zu" src="audio/leccion2/nor-zara-zu.mp3"></audio>
+            <audio id="nongoa-zara-zu" src="audio/leccion2/nongoa-zara-zu.mp3"></audio>
+            <audio id="euskal-naiz" src="audio/leccion2/euskal-naiz.mp3"></audio>
+            <audio id="ni-koa-naiz" src="audio/leccion2/ni-koa-naiz.mp3"></audio>
+            <audio id="mexiko-naiz" src="audio/leccion2/mexiko-naiz.mp3"></audio>
+            <audio id="frantzia-naiz" src="audio/leccion2/frantzia-naiz.mp3"></audio>
+            <audio id="bilbo-naiz" src="audio/leccion2/bilbo-naiz.mp3"></audio>
+            <audio id="donostia-naiz" src="audio/leccion2/donostia-naiz.mp3"></audio>
+            <audio id="nafarroa-naiz" src="audio/leccion2/nafarroa-naiz.mp3"></audio>
+            <audio id="lapurdi-naiz" src="audio/leccion2/lapurdi-naiz.mp3"></audio>
+            <audio id="gazteiz-naiz" src="audio/leccion2/gazteiz-naiz.mp3"></audio>
+            <audio id="beasain-naiz" src="audio/leccion2/beasain-naiz.mp3"></audio>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Euskara Ikasi | Lección basada en el método HABE</p>
+    </footer>
+
+    <script>
+        function playAudio(id) {
+            const audio = document.getElementById(id);
+            audio.currentTime = 0; // Reinicia el audio si ya estaba reproduciéndose
+            audio.play();
+        }
+        
+        // Alternativa con síntesis de voz (si no tienes archivos de audio)
+        function speakText(text, lang = 'eu') {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('Tu navegador no soporta la síntesis de voz.');
+            }
+        }
+
+        // Ejercicio 1
+        function checkExercise1() {
+            const answers = {
+                "ex1-1": "adiós",
+                "ex1-2": "bien",
+                "ex1-3": "yo",
+                "ex1-4": "no"
+            };
+            
+            checkAnswers(answers, 1);
+        }
+        // Ejercicio 2
+        function checkExercise2() {
+            const answers = {
+                "ex2-1": "bai",
+                "ex2-2": "eskerrik asko",
+                "ex2-3": "zu",
+                "ex2-4": "ni"
+            };
+            
+            checkAnswers(answers, 2);
+        }
+        // Ejercicio 3
+        function checkExercise3() {
+            const answers = {
+                "ex3-1": "Ni Koldo naiz",
+                "ex3-2": "Oso ongi"
+            };
+            
+            checkAnswers(answers, 3);
+        }
+
+         // Función genérica para verificar respuestas
+
+        function checkAnswers(answers, exerciseNum) {
+            let allCorrect = true;
+            
+            for (const [id, answer] of Object.entries(answers)) {
+                // Extraer el número de pregunta (1, 2, 3) del ID (ex1-1 → 1)
+                const questionNum = id.split('-')[1];
+                const userAnswer = document.getElementById(id).value.trim().toLowerCase();
+                // Cambiar "fb" + id por "fb" + exerciseNum + "-" + questionNum
+                const feedback = document.getElementById(`fb${exerciseNum}-${questionNum}`);
+                
+                if (userAnswer === answer.toLowerCase()) {
+                    feedback.textContent = "✓ Correcto";
+                    feedback.className = "feedback correct";
+                } else {
+                    feedback.textContent = `✗ Debería ser: ${answer}`;
+                    feedback.className = "feedback incorrect";
+                    allCorrect = false;
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
