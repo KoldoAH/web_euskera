@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lección 1: Gramática Euskera | Euskara Ikasi</title>
+    <title>Lección 2: Gramática Euskera | Euskara Ikasi</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lekton:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -114,7 +114,7 @@
     <main class="lesson-container">
         <!-- Introducción a posposiciones -->
         <section class="theory-section">
-            <h2 class="theory-title">2. Aprende a presentarte</h2>
+            <h2 class="theory-title">1. Aprende a presentarte</h2>
             <p>Kaixo!</p>
             <p>Vamos a recordar algunas palabras de la primera lección y aprenderemos nuevas palabras y expresiones. <strong>Aurrera!</strong></p>
             <div class="highlight-box">
@@ -315,14 +315,132 @@
                         <div class="translation">Yo vivo en ____</div>
                     </div>
                 </div>
+                <div class="highlight-box">
+                    <p>Vamos a ver varios ejemplos:</p>
+                <div class="example-pair">
+                    <div class="euskera">Mexiko<span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('mexiko-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        
+                    </div>
+                    <div class="translation">En México</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Frantzia<span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('frantzia-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Francia</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Bilbo<span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('bilbo-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Bilbao</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Donostia<span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('donostia-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En San Sebastián</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Nafarroa<span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('nafarroa-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Navarra</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Lapurdi<span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('lapurdi-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Lapurdi</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Gazteiz<span style="color: green;">e</span><span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Vitoria</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Santander<span style="color: green;">re</span><span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Santander</div>
+                </div>
+                <div class="example-pair">
+                    <div class="euskera">Beasain<span style="color: green;">e</span><span style="color: red;">n</span>
+                        <button class="audio-btn" onclick="playAudio('beasain-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation">En Beasáin</div>
+                </div>
+
+                <p>Si termina en vocal, añadimos -n. Si termina en consonante, añadimos -en. Sin embargo, si termina en la letra r, añadimos otra r (Santander -> Santanderren).</p>
+                <p>Como ya puedes decir de dónde eres, ahora es tu turno: Nongoa zara zu?</p>
+            </div>
         </section>
 
-            
+        <!-- Ejercicio 1 -->
+        <section class="interactive-exercise">
+            <div class="exercise-title">✍️ Ejercicio 1: traduce las siguientes frases al euskera.</div>
+            <p>Ejemplo: Nor zara zu? -> <strong>Quién eres tú?</strong></p>
+            <p>1.Soy de Francia -> <input type="text" id="ex1-1"> <span class="feedback" id="fb1-1"></span></p>
+            <p>2.Vivo en Bilbao -> <input type="text" id="ex1-2"> <span class="feedback" id="fb1-2"></span></p>
+            <p>3.Dónde vives? -> <input type="text" id="ex1-3"> <span class="feedback" id="fb1-3"></span></p>
+            <p>4.Vivo en San Sebastián -> <input type="text" id="ex1-4"> <span class="feedback" id="fb1-4"></span></p>
+            <button onclick="checkExercise1()">Comprobar respuestas</button>
+        </section>
 
-            <section class="theory-section">
-                <p>Has llegado al final de la lección. Nos vemos en la siguiente!</p>
-            </section>
-           
+            <main class="lesson-container">
+        <!-- Introducción a posposiciones -->
+        <section class="theory-section">
+            <h2 class="theory-title">3. Más vocabulario</h2>
+            <p>Terminamos esta lección con un poco más de vocabulario básico</p>
+            <div class="example-pair">
+                    <div class="euskera"><span style="color: blue;">Eskerrik</span> <span style="color: red;">asko</span>
+                        <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="translation"><span style="color: red;">muchas</span> <span style="color: blue;">gracias</span></div>
+            </div>
+            <div class="example-pair">
+                <div class="euskera">Barkatu
+                    <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+                <div class="translation">Perdón</div>
+            </div>
+            <div class="example-pair">
+                <div class="euskera">Mesedez
+                    <button class="audio-btn" onclick="playAudio('gazteiz-naiz')">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+                <div class="translation">Por favor</div>
+            </div>
+        </section>
+        </main>
+
+
+           <p>Has llegado al final de la lección. Nos vemos en la siguiente!</p>
             <!-- Elementos de audio (ocultos) -->
             <audio id="kaixo" src="audio/leccion2/kaixo.mp3"></audio>
             <audio id="gari-naiz" src="audio/leccion2/gari-naiz.mp3"></audio>
@@ -366,10 +484,10 @@
         // Ejercicio 1
         function checkExercise1() {
             const answers = {
-                "ex1-1": "adiós",
-                "ex1-2": "bien",
-                "ex1-3": "yo",
-                "ex1-4": "no"
+                "ex1-1": "Frantziakoa naiz",
+                "ex1-2": "Bilbon bizi naiz",
+                "ex1-3": "Non bizi zara?",
+                "ex1-4": "Donostian bizi naiz"
             };
             
             checkAnswers(answers, 1);
